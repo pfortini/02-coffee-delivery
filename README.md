@@ -1,54 +1,23 @@
-# React + TypeScript + Vite
+## Coffee Delivery
+Esse é um projeto proposto como exercício-desafio ao longo da trilha de aprendizado de ReactJS da [Rocketseat](https://app.rocketseat.com.br/)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Untitled](https://github.com/user-attachments/assets/c18e6418-8649-4131-9c06-3769c66989d7)
 
-Currently, two official plugins are available:
+Foi desenvolvida uma aplicação de controle de tarefas (to-do list) com as seguintes funcionalidades:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Listagem de cafés disponíveis para compra
+- Adicionar uma quantidade específicas de itens no carrinho
+- Aumentar ou remover a quantidade de itens no carrinho
+- Formulário para o usuário preencher o seu endereço
+- Exibir o total de itens no carrinho no Header
+- Exibir o valor total da soma de itens no carrinho multiplicados pelo valor
 
-## Expanding the ESLint configuration
+Foram aplicados conceitos essenciais do ReactJS:
+- Estados (`useState`) para gerenciamento dinâmico.
+- ContextAPI (`useContext`) para compartilhamento de estados.
+- LocalStorage para armazenamento entre sessões
+- Listas e chaves (`map` e `key`) para renderização eficiente.
+- Propriedades (Props) para modularidade.
+- Componentização para organização e manutenção do código.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+O projeto foi concluído dentro de sua proposta inicial, tendo em mãos uma aplicação funcional e escalável para um serviço de delivery de cafés.
